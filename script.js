@@ -65,8 +65,8 @@ async function handleSubmit(event) {
       "Failed to load Harry Potter facts. Please check try again and check your connection.";
   }
 }
-// I wanted to try something different that wr haven't done in class 
-// and that was fetching two URL simmultaneously, which i researed and 
+// I wanted to try something different that we haven't done in class 
+// and that was fetching two URL simmultaneously, which i researched and 
 // i was able to do so that was kinda cool. it was difficult 
 // to find an API that used the "POST" method 
 // which was what i wanted to do to begin with.
