@@ -8,6 +8,7 @@ formTag.onsubmit = handleSubmit;
 
 async function handleSubmit(event) {
   event.preventDefault();
+
   // Clear any existing logs or messages from previous attempts
   errorEl.innerHTML = "";
   successEl.innerHTML = "";
@@ -44,6 +45,7 @@ async function handleSubmit(event) {
     // 5. style the updates and properly render the picture inside an <img> element
     outputEl.style.color = "#00ff66";
     successEl.innerHTML = "Success! Here are your facts:";
+
     outputEl.innerHTML = `
       <h3>Book: ${titleData}</h3>
       <p><strong>Description:</strong> ${descriptionData}</p>
@@ -53,11 +55,12 @@ async function handleSubmit(event) {
       <img src="${imageData}" alt="${fullNameData}" style="max-width: 150px; display: block; margin-top: 10px; border-radius: 4px;">
     `;
     // 6. console logs the result for verification that it succeded or failed.
-    console.log("Title:", titleData);
-    console.log("Description:", descriptionData);
-    console.log("Full Name:", fullNameData);
-    console.log("Image URL:", imageData);
-    console.log("Hogwarts House:", hogwartsHouse);
+    console.log(titleData);
+    console.log(descriptionData);
+    console.log(fullNameData);
+    console.log(imageData);
+    console.log(hogwartsHouse);
+
   } catch (error) {
     console.error("Error processing Harry Potter data:", error);
     errorEl.style.color = "Red";
